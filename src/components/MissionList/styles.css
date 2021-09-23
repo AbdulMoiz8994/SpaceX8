@@ -16,9 +16,11 @@ body{
    background-color: rgba(0, 0, 0, 0.7);
    overflow: auto;     
    height: 100vh;
+   display: inline-block;
 }
 .first_child  > img{
     margin: 1rem 0rem;
+    width: 90%;
 }
 
 .list_items li a{

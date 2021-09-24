@@ -11,16 +11,12 @@ interface Props{
 export const MissionInfoCont=({id}:Props) =>{
 
 
-   const {data,loading,error,refetch}=useLaunchIdQuery({
+   const {data,loading,error}=useLaunchIdQuery({
        variables:{
         //    we add String because the id key has string type and we need to convert it number to string
            id: String(id)
        }
    });
-
-//    useEffect(() =>{
-//        refetch()
-//    },[id])
    if(loading){
        return <h1>The Data is Loading</h1>
    }

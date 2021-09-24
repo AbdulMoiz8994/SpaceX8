@@ -2,9 +2,7 @@ import React from 'react'
 import {useMissionListQuery} from '../../generated/graphql'
 import {MissionList} from './MissionList'
 import  {OwnProps} from './MissionList'
-// export interface OwnProps{
-//     handleChange:(newID: number) => void;
-//   }
+
   
 
 export const MissionContainer = (props: OwnProps) => {

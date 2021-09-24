@@ -1,14 +1,60 @@
 @import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@300&display=swap');
 
-
-
 .mainMissionInfo{
-    margin-left: 60px;
+    margin-top: 1rem;
+    margin-left: 35px;
     border: 2px solid gray;
-    width: 50vw;
-
+    width: 60vw;
+   overflow: auto !important;
+   background-color: rgba(0, 0, 0, 0.7);
 }
-.MissionnesteDiv{
-
+.MissionnesteDiv {
+    margin: 2rem 1rem;
+    
+}
+.MissionnesteDiv h1,.span-Sucessfail{
+   color: white;
+   font-weight: 400;
 }
 
+.span-Sucessfail{
+    font-size: 1.5rem;
+}
+.Success{
+    color: rgb(105, 243, 105);
+  font-weight: bold;
+  font-size: 30px;
+}
+.Fail{
+    color: rgba(241, 26, 26, 0.857);
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.description{
+    color: white;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.Images_Div div{
+    display: flex !important;
+    flex-direction: row !important; 
+    flex-wrap: wrap !important;
+    align-items: center !important;
+}
+.Images_Div div img{
+    width: 45%;
+    height: 40vh;
+    padding:  1rem 3rem;
+}
+@media (max-width:1000px) {
+    .Images_Div div img{
+        width: 50%;
+    }
+}
+@media (max-width:768px) {
+    .Images_Div div img{
+        width: 100%;
+    }
+}

@@ -5,7 +5,7 @@ import {MissionInfoCont} from './components/MissionInfo/index'
 function App() {
 
 
-   let [id, setId]=useState(10)
+let [id, setId]=useState(100)
 
  const handleChange=React.useCallback(newID =>{
       setId(newID)

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import {useLaunchIdQuery} from '../../generated/graphql'
 import {MissionInfo} from './MissionInfo'
 

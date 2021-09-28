@@ -5,16 +5,6 @@ this.addEventListener('activate', function (e) {
     console.log("[ServiceWorker] Activate");
 });
 
-// this.addEventListener('install', (event) => {
-//     console.log("Service Worker Installed");
-//     event.waitUntil(
-//         caches.open(CACHE_NAME).then((data) => {
-//             return data.addAll(urlcache)
-//         }).catch((err) => {
-//             console.log(err);
-//         })
-//     )
-// });
 this.addEventListener('install', (event) =>{
     console.log("The Service Wokrer has installed");
     event.waitUntil(

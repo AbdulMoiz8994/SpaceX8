@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {ApolloProvider} from '@apollo/client';
-import * as serviceWorker from './ServiceWorker'
+import swDev from './ServiceWorker'
 import {Client} from './graphQlConfig/apolloconfig'
 
 
@@ -25,4 +25,4 @@ reportWebVitals();
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.register();
+swDev();

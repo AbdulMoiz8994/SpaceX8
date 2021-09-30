@@ -13,7 +13,7 @@ interface Props extends OwnProps{
 
 
 export const MissionList: React.FC<Props> = ({data,handleChange}) => {
-    console.log(data);
+    // console.log(data);
     
    const [height, setHight]=useState('')
 useEffect(() =>{

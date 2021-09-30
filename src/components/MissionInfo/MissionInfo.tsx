@@ -8,7 +8,7 @@ interface Prop {
 
 
 export const MissionInfo: React.FC<Prop> = ({ data }) => {
-    console.log(data);
+    // console.log(data);
 
     // loading Sate for Server is coming
     if (!data?.launch) {

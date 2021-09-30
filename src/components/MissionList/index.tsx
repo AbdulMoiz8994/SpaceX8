@@ -14,7 +14,7 @@ export const MissionContainer = (props: OwnProps) => {
     if(error){
         return <h1>There is an Error</h1>
     }
-     console.log(data);
+    //  console.log(data);
      
     return (
         <div>

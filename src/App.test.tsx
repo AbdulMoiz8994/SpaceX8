@@ -1,9 +1,20 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { shallow } from 'enzyme';
 import App from './App';
+import {MissionInfoCont} from './components/MissionInfo/index'
+import {MissionContainer} from './components/MissionList/index'
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/hello/i);
-  expect(linkElement).toBeInTheDocument();
+describe('App', () => {
+  const container = shallow(<App />);
+	it('should render a <div/>', () => {
+		expect(container.find('div').length).toEqual(3);
+});
+   it('should Reder the First Comp' , () =>{
+     expect(container.containsMatchingElement(<MissionContainer handleChange={jest.fn}/>))
+   })
+ 
+  it('Checking the  MissionInfo Comp',() =>{
+    expect(container.containsMatchingElement(<MissionInfoCont id={10}/>))
+  })
+
 });

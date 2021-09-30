@@ -739,7 +739,7 @@ export type LaunchIdQueryVariables = Exact<{
   id: Scalars['String'];
 }>;
 
-
+  
 export type LaunchIdQuery = { __typename?: 'Query', launch?: Maybe<{ __typename?: 'Launch', launch_success?: Maybe<boolean>, launch_year?: Maybe<number>, mission_name?: Maybe<string>, details?: Maybe<string>, rocket?: Maybe<{ __typename?: 'LaunchRocket', rocket_name?: Maybe<string>, rocket_type?: Maybe<string> }>, launch_site?: Maybe<{ __typename?: 'LaunchSite', site_name?: Maybe<string> }>, links?: Maybe<{ __typename?: 'LaunchLinks', flickr_images?: Maybe<Array<Maybe<string>>>, video_link?: Maybe<string>, wikipedia?: Maybe<string> }> }> };
 
 export type MissionListQueryVariables = Exact<{ [key: string]: never; }>;

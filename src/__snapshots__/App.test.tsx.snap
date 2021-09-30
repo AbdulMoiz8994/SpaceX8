@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App This time is making the snapshot 1`] = `
+<div
+  className="App"
+>
+  <div>
+    <MissionContainer
+      handleChange={[Function]}
+    />
+  </div>
+  <div>
+    <MissionInfoCont
+      id={100}
+    />
+  </div>
+</div>
+`;

@@ -10,11 +10,14 @@ describe('App', () => {
 		expect(container.find('div').length).toEqual(3);
 });
    it('should Reder the First Comp' , () =>{
-     expect(container.containsMatchingElement(<MissionContainer handleChange={jest.fn}/>))
+     expect(container.containsMatchingElement(<MissionContainer handleChange={jest.fn()}/>))
    })
  
   it('Checking the  MissionInfo Comp',() =>{
-    expect(container.containsMatchingElement(<MissionInfoCont id={10}/>))
-  })
+    expect(container.containsMatchingElement(<MissionInfoCont id={100}/>)).toEqual(true)
 
+  })
+   it('This time is making the snapshot',() =>{
+     expect(container).toMatchSnapshot()
+   })
 });
